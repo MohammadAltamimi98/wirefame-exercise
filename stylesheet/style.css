@@ -1,50 +1,91 @@
-nav{
-    width:100%;
-    background-color: #222222;
-    margin-bottom: 20px;
-
+body{
+  /* overflow-x: hidden; */
 }
 
-nav img{
-    position:relative;
-    left: 60px;
-    top:10px;
+*{
+  box-sizing: border-box;
+}
+
+
+
+ /* header */
+
+ header{/*  border:solid; */
+margin-bottom: 30px;
+height:120px;
+padding: 20px;
+background-color:#444;}
+
+
+#logoimg{
+  position: relative;
+  left:180px;
+
 }
 
 a{
     text-decoration: none;
-    color: blanchedalmond;
+    color:white;
 }
-
-nav li{
-    display: inline;
-    width:100%;
-    margin: 50px;
-    position: relative;
-    left:600px;
-    bottom:30px;
-    color:blanchedalmond
-    
+ 
+li{
+  /* border:solid; */
+  /* background-color: darkgrey; */
+  display: inline;
+  margin-right:80px;
+  position: relative;
+  left: 400px;
+  bottom:50px;
+  width:100px;
+  height:70px;
 }
+  
 
-#imgmain{
+
+
+
+
+
+
+
+
+
+ #imgmain{
     display: block;
     margin-left: auto;
      margin-right: auto;
      margin-bottom: 20px;
-     width:90% } 
+     width:960px;
+    height:450;
+  }   
 
-* {
-  box-sizing: border-box;
+
+
+
+
+
+
+
+
+/* three sub banners */
+
+  .column {
+    float: left;
+   width:300px;
+   height: 375px;;
+    margin-bottom: 20px;
+    margin-right:30px;
+  }
+  
+.row{ 
+  /* border: solid; */
+  position: relative;
+  left:195px;
+  width:1000px;
+ height:375px;
+ overflow: hidden;
+
 }
-
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-  margin-bottom: 20px;
-}
-
 
 
 .row::after {
@@ -54,22 +95,9 @@ nav li{
 }
 
 
-.two {
-    float: left;
-    width: 33.33%;
-    padding: 50px;
-  }
-  
-  .row1::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
 
-  .row1{
-      margin-left:100px;
-  }
 
+/* footer */
 footer{
     display: block;
     clear: both;
@@ -78,3 +106,56 @@ footer{
     background-color: #444;
     position: static;}
 
+
+    #scrollableparagraph{
+      border:solid;
+       position:relative;
+       left:200px;
+      top:30px;
+        width:450px;
+        height:340px;
+      overflow-y: scroll;
+      width:900px;
+      
+        }
+
+
+    #downimage{
+      width:50%;
+      position: relative;
+      left:195px;
+      margin-top: 30px;
+      margin-right: 30px;
+    }
+
+
+    .row1 {
+      display: flex;
+      margin-bottom: 20px;
+      width: 960px;
+    }
+    
+    .two {
+      flex: 50%;
+    }
+
+    .box{
+      border:solid;
+      border-radius:7.5px;
+      width:200px;
+      height:50px;
+      padding:10px;
+      text-align: center;
+      position: relative;
+      left:710px;
+      bottom:70px;
+      background-color: black;
+      color:white;
+      padding:15px;
+      font-size: 19px;
+
+    }
+
+    #hoover:hover {
+      background-color: grey;
+    }
